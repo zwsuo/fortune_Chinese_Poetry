@@ -11,6 +11,11 @@
 
 我们基于 **[chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)**（最全中华古诗词数据库）及经典典籍文本，筛选整理出传播度广、文学价值高的内容，打造了这套 **中文 Fortune 语料库**。从此，你在终端输入 `fortune`，不再是随机的英文句子，而是可能遇见李白的豪情、苏轼的豁达、纳兰性德的深情，或是《论语》的智慧、《诗经》的风雅，让日常终端操作，变成与中华经典对话的轻量文化体验。
 
+本语料库内所有内容已将标题、作者、章节等内容做了高亮处理，如图：
+
+<img width="2138" height="1242" alt="图片" src="https://github.com/user-attachments/assets/65a7085a-1524-4888-ba95-3d237ef81170" />
+
+
 语料库覆盖 **9大核心经典品类**，从唐诗宋词到诸子经典，从五代花间到元代戏曲，满足不同文化偏好：
 - 全唐诗（quantangshi）：5.5万首唐诗中精选李白、杜甫、王维等名家经典，尽显盛唐气象
 - 全宋诗（quansongshi）：26万首宋诗中筛选苏轼、陆游、王安石等代表作品，兼具理趣与意境
@@ -44,15 +49,26 @@
    ```
 
 2. **确认系统目录**  
-   部分轻量系统可能缺少 `fortune` 默认数据目录，先创建（若已存在则跳过）：
+   使用 `fortune -f` 命令查看默认语料库路径，部分轻量系统可能缺少 `fortune` 默认数据目录，若缺少可先手动创建：
    ```bash
-   sudo mkdir -p /usr/share/games/fortunes
+   fortune -f
+   100.00% /usr/share/games/fortunes
+     0.09% tang300
+     6.09% quansongci
+    16.68% quantangshi
+     0.01% lunyu
+     0.01% nantang2zhu
+     0.09% shijing
+    73.61% quansongshi
+     0.14% huajianji
+     3.20% yuanqu
+     0.07% nalanxingde
    ```
 
 3. **复制语料文件**  
-   将筛选好的9类语料文件（`fortune_Chinese/100_fortune_files/` 目录下）复制到系统目录：
+   将筛选好的9类语料文件（仓库根目录下）复制到fortune语料库目录(即步骤2目录)：
    ```bash
-   sudo cp ./fortune_Chinese/100_fortune_files/* /usr/share/games/fortunes
+   sudo cp ./fortune_Chinese_Poetry/* /usr/share/games/fortunes
    ```
 
 
