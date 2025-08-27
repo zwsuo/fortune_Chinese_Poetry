@@ -13,7 +13,8 @@
 
 本语料库内所有内容已将标题、作者、章节等内容做了高亮处理，如图：
 
-<img width="2138" height="1242" alt="图片" src="https://github.com/user-attachments/assets/65a7085a-1524-4888-ba95-3d237ef81170" />
+<img width="2880" height="1728" alt="图片" src="https://github.com/user-attachments/assets/db86319c-d00c-40f9-84f5-107404379e33" />
+
 
 
 语料库覆盖 **9大核心经典品类**，从唐诗宋词到诸子经典，从五代花间到元代戏曲，满足不同文化偏好：
